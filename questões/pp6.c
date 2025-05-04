@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-#define ALTURA 256
-#define LARGURA 256
+#define ALTURA 555
+#define LARGURA 555
 #define MAX_COLOR 255
 
 unsigned char img[ALTURA][LARGURA][3];
 
 void setPixel(int x, int y, unsigned char r, unsigned char g, unsigned char b){
+
     img[x][y][0] = r;
     img[x][y][1] = g;
     img[x][y][2] = b;
@@ -42,6 +43,7 @@ void drawline(int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, 
 }
 
 int main(){
+
     
     int meio = (int) ALTURA / 2;
     clearImage();
